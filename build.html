@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" />
+		<meta http-equiv="save" content="history">
+		<script src="js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="js/base.js"></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<title>绑卡</title>
+	</head>
+	<body>
+		<!--头部结构S-->
+		<div class="header">
+			<div class="head_info">
+				<a href="javascript:;" onClick="javascript :history.back(-1);" class="back">
+					<img src="img/back.png" alt="" />
+				</a>	
+				<span class="info">绑卡信息</span>
+			</div>
+		</div>
+		<!--头部结构E-->
+		<!--主题结构S-->
+		<div class="bk1_content">
+			<div class="bk1_content_t">
+				<ul>
+					<li>
+						<span>姓名</span>
+						<span>李萍萍</span>
+					</li>
+					<li>
+						<span>身份证</span>
+						<span>65364646576765424</span>
+					</li>
+					<li>
+						<span>银行卡号</span>
+						<span>
+	    				<input type="text" placeholder="请输入您的银行卡号"/>
+	    			</span>
+					</li>
+					<li>
+						<span>手机号码</span>
+						<span>
+	    				<input type="text" placeholder="请输入您银行卡预留手机号"/>
+	    			</span>
+					</li>
+					<li class="clearfix">
+						<span class="code fl">
+	    				<input type="text" placeholder="验证码"/>
+	    			</span>
+						<span class="gainCode fr">
+	    				<input type="button" id="btn_Code" value="获取验证码" onclick="settime(this)"/> 
+	    			</span>
+					</li>
+				</ul>
+			</div>
+			<div class="bk1_content_m">
+				<span>
+	    			<a href="">查看支持的银行卡</a>
+	    		</span>
+			</div>
+			<div class="bk1_content_b">
+				<div class="changeCard">
+					<a href="index.html">确认信息并绑卡</a>
+				</div>
+				<div class="changeCard1">
+					<a href="index.html">关注公众号，稍后绑卡</a>
+				</div>
+				<div class="statement">
+					<input type="checkbox" name="" id="" value="" />
+					<img class="agree" src="img/checked.jpg" alt="" />
+					<img class="disagree" src="img/no_cheched.jpg" alt="" />
+					<m>我同意以下条款声明:</m>
+					<ul class="statement_b">
+						<li>
+							<a href="">《车风险用户协议系统》</a>
+						</li>
+						<li>
+							<a href="">《电子签章委托申请使用协议》</a>
+						</li>
+						<li>
+							<a href="">&nbsp;&nbsp;常见问题&解答</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--主题结构E-->
+		<!--底部结构S-->
+		<!--占位-->
+		<div class="foot"></div>
+		<div class="footer">
+			<ul class="clearfix">
+				<li>
+					<a href="index.html">
+						<span class="index"></span>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="contact"></span>
+						<span>联系我们</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="cardInfo0"></span>
+						<span class="blue">绑卡信息</span>
+					</a>
+				</li>
+				<li>
+					<a href="baseInfo.html">
+						<span class="person"></span>
+						<span>个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--底部结构E-->
+	</body>
+</html>

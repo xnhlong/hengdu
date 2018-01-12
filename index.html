@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" />
+		<script src="js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="js/base.js"></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<script src="js/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<title>个人中心</title>
+	</head>
+
+	<body>
+		<!--头部结构S-->
+		<div class="header">
+			<div class="head_info">
+				<a href="build.html" class="back">
+					<img src="img/back.png" alt="" />
+				</a>
+				<span class="info">首页</span>
+			</div>
+		</div>
+		<!--头部结构E-->
+		<!--主题结构S-->
+		<div class="index_content">
+			<div class="index_con_t">
+				<!--轮播S-->
+				<div id="focus" class="focus">
+					<div class="hd">
+						<ul></ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<li><img src="img/banner.png" alt="" /></li>
+							<li><img src="img/banner1.jpg" alt="" /></li>
+							<li><img src="img/banner2.jpg" alt="" /></li>
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">
+					TouchSlide({
+						slideCell: "#focus",
+						titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+						mainCell: ".bd ul",
+						effect: "leftLoop",
+						autoPlay: true, //自动播放
+						autoPage: true, //自动分页
+						switchLoad: "_src" //切换加载，真实图片路径为"_src" 
+					});
+				</script>
+				<!--轮播E-->
+				<div class="index_nav">
+					<div>
+						<a href="list.html">
+							<div class="nav_img"><img src="img/car.png" alt="" /></div>
+							<span>车险分期订单</span>
+						</a>
+					</div>
+					<div>
+						<a href="buildingCard.html">
+							<div class="nav_img"><img src="img/index_card.png" alt="" /></div>
+							<span>绑卡信息</span>
+						</a>
+					</div>
+					<div>
+						<a href="baseInfo.html">
+							<div class="nav_img"><img src="img/index_person.png" alt="" /></div>
+							<span>个人基础信息</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="index_list">
+				<p class="clearfix">
+					<m></m><span>我的订单</span></p>
+				<div>
+					<div class="list_t clearfix">
+						<span class="fl">订单编号：80907bhf</span>
+						<span class="fr date">2017-12-06</span>
+					</div>
+					<div class="list_m clearfix">
+						<div class="fl list_pic"><img src="img/id_Card.png" alt="" /></div>
+						<div class="fr clearfix list_datil">
+							<p>30易衡通12期</p>
+							<span class="fl">
+	   					<p>审核状态：<b>审核成功</b></p>
+	   					<p>投保状态：<b>已投保</b></p>
+	   					<p>订单状态：<b>还款中</b></p>
+	   				</span>
+							<span class="fr">
+	   					<p>投保金额：<b>1472.15</b></p>
+	   					<p>&nbsp;&nbsp;&nbsp;&nbsp;首期款：<b>524.3</b></p>
+	   				</span>
+						</div>
+					</div>
+					<div class="list_b">
+						<p>
+							<a href="detail.html">查看详情</a>
+						</p>
+					</div>
+				</div>
+				
+				<div>
+					<div class="list_t clearfix">
+						<span class="fl">订单编号：80907bhf</span>
+						<span class="fr date">2017-12-06</span>
+					</div>
+					<div class="list_m clearfix">
+						<div class="fl list_pic"><img src="img/id_Card.png" alt="" /></div>
+						<div class="fr clearfix list_datil">
+							<p>30易衡通12期</p>
+							<span class="fl">
+	   					<p>审核状态：<b>审核成功</b></p>
+	   					<p>投保状态：<b>已投保</b></p>
+	   					<p>订单状态：<b>还款中</b></p>
+	   				</span>
+							<span class="fr">
+	   					<p>投保金额：<b>1472.15</b></p>
+	   					<p>&nbsp;&nbsp;&nbsp;&nbsp;首期款：<b>524.3</b></p>
+	   				</span>
+						</div>
+					</div>
+					<div class="list_b">
+						<p>
+							<a href="">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--主题结构E-->
+		<!--底部结构S-->
+		<div class="foot"></div>
+		<div class="footer">
+			<ul class="clearfix">
+				<li>
+					<a href="#">
+						<span class="index0"></span>
+						<span class="blue">首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="contact"></span>
+						<span>联系我们</span>
+					</a>
+				</li>
+				<li>
+					<a href="buildingCard.html">
+						<span class="cardInfo"></span>
+						<span>绑卡信息</span>
+					</a>
+				</li>
+				<li>
+					<a href="baseInfo.html">
+						<span class="person"></span>
+						<span>个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--底部结构E-->
+	</body>
+</html>

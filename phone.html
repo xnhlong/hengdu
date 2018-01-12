@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" />
+		<meta http-equiv="save" content="history">
+		<script src="js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="js/base.js"></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<title>更换手机</title>
+	</head>
+	<body>
+		<!--头部结构S-->
+		<div class="header">
+			<div class="head_info">
+				<a href="javascript:;" onClick="javascript :history.back(-1);" class="back">
+					<img src="img/back.png" alt="" />
+				</a>
+				<span class="info">绑定手机号</span>
+			</div>
+		</div>
+		<!--头部结构E-->
+		<!--主题结构S-->
+		<div class="phone_content">
+			<div class="passWd_content_t">
+				绑定手机号码需要通过短信验证
+			</div>
+			<div class="phone_content_m">
+				<ul>
+					<li>
+						<input type="text" class="phone_num" onblur="phonoe_reg(this)" placeholder="请输入原手机号码" />
+					</li>
+					<li>
+						<input type="text" class="phone_num" onblur="phonoe_reg(this)" placeholder="请输入新手机号码" />
+					</li>
+						<li class="clearfix">
+						<span class="code fl">
+	    				<input type="text" placeholder="验证码"/>
+	    			</span>
+						<span class="gainCode fr">
+	    				<input type="button" id="btn_Code" value="获取验证码" onclick="settime(this)"/> 
+	    			</span>
+					</li>
+				</ul>
+			</div>
+			<div class="phone_content_b">
+				<div class="changeCard">
+					<a href="#">立即绑定</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--主题结构E-->
+		<!--底部结构S-->
+		<div class="foot"></div>
+		<div class="footer">
+			<ul class="clearfix">
+				<li>
+					<a href="index.html">
+						<span class="index"></span>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="contact"></span>
+						<span>联系我们</span>
+					</a>
+				</li>
+				<li>
+					<a href="buildingCard.html">
+						<span class="cardInfo"></span>
+						<span>绑卡信息</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="person0"></span>
+						<span class="blue">个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--底部结构E-->
+	</body>
+</html>

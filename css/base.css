@@ -1,0 +1,103 @@
+html,
+body {
+	background: #F4F4F4;
+	font-size: 0.26rem;
+	position: relative;
+	border-top:0.03px solid white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+img{
+	vertical-align: middle;
+}
+/*浮动*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+
+/*清除a input标签下划线*/
+
+a,
+input {
+	border: 0;
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+}
+input {
+	outline: none;
+	border: none;
+	background: transparent;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+}
+
+input[disabled] {
+	color: #000 !important;
+	opacity: 0.3;
+}
+
+::-webkit-input-placeholder {
+	color: #DEDEDE;
+	font-size: 0.26rem;
+}
+
+
+/* 使用webkit内核的浏览器 */
+
+:-moz-placeholder {
+	color: #DEDEDE;
+	font-size: 0.26rem;
+}
+
+
+/* Firefox版本4-18 */
+
+::-moz-placeholder {
+	color: #DEDEDE;
+	font-size: 0.26rem;
+}
+
+
+/* Firefox版本19+ */
+
+:-ms-input-placeholder {
+	color: #DEDEDE;
+	font-size: 0.26rem;
+}
+
+
+/*清除ul li默认样式*/
+
+ul {
+	list-style: none;
+}
